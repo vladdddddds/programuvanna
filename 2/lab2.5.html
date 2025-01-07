@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Лаборатона №2</title>
+</head>
+
+<body class="page-5">
+   <div class="main">
+      <a href="./lab2.html">Головна</a>
+   </div>
+   <div class="main-p">Реалізація та дослідження роботи наступних методів:
+      <hr> console.info()
+      <hr> console.warn()
+      <hr> console.error()
+      <hr> console.dir()
+      <hr> console.dirxml()
+      <hr> console.time()
+      <hr> console.timeEnd()
+      <hr> console.profile()
+      <hr> console.profileEnd()
+      <hr> console.assert().
+   </div>
+   <div class="main-b">
+      <a href="/index.html">https://hrytsiv.kesug.com/</a>
+   </div>
+   <script>
+      console.info("Це інформаційне повідомлення.");
+      // 
+      console.warn("Це попередження.");
+      // 
+      console.error("Це повідомлення про помилку.");
+      // 
+      const obj = { name: "Олександр", age: 30 };
+      console.dir(obj);
+      // 
+      const element = document.getElementById("Елемент DOM-об'єкту в консолі");
+      console.dirxml(element);
+      // 
+      console.time("myTimer");
+      // Будь-яка функція для вимірювання часу виконання коду
+      console.timeEnd("myTimer");
+      // 
+      console.profile("myProfile");
+      // Починає console.profile()запис профілю продуктивності
+      console.profileEnd("myProfile");
+      //
+      const x = 10;
+      console.assert(x === 5, "Значення x не дорівнює 5");
+   </script>
+</body>
+
+</html>

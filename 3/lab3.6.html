@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<title>Лаборатона робота №3</title>
+</head>
+
+<body class="page-7">
+	<div class="main">
+		<a href="./lab3.html">Головна</a>
+	</div>
+	<ul class="tree" id="Tree">
+		<li>
+			<a href="#">FRUITS</a>
+			<ul>
+				<li>apple</li>
+				<li>pineapple</li>
+				<li>apricot</li>
+				<li>pear</li>
+				<li>lemon</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">VEGETABLES</a>
+			<ul>
+				<li>potatoes</li>
+				<li>beetroot</li>
+				<li>carrots</li>
+				<li>pear</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="main-b">
+		<a href="/index.html">hrytsiv.kesug.com</a>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			let tree = document.getElementById('Tree');
+			tree.addEventListener('click', function (e) {
+				let target = e.target;
+				if (target.tagName === 'A') {
+					let ul = target.nextElementSibling;
+					if (ul) {
+						ul.style.display = (ul.style.display === 'none' || ul.style.display === '') ? 'block' : 'none';
+						e.preventDefault();
+					}
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>

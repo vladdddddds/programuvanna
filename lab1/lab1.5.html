@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>Розрахунок суми ряду</h2>
+	<p>Введіть значення x та y:</p>
+	<form id="calculatorForm">
+		<label for="xInput">x:</label>
+		<input type="number" id="xInput" step="0.01" required>
+		<label for="yInput">y:</label>
+		<input type="number" id="yInput" step="0.01" required>
+		<br>
+		<br>
+		<button type="submit">Обчислити</button>
+	</form>
+	<p id="result">Сума ряду: </p>
+	<p><a href="lab1.6.html">Завдання 6</a></p>
+	<script>
+		function factorial(n) {
+			let fact = 1;
+			for (let i = 2; i <= n; i++) {
+				fact *= i;
+			}
+			return fact;
+		}
+		document.getElementById("calculatorForm").addEventListener("submit", function (event) {
+			event.preventDefault();
+			let x = parseFloat(document.getElementById('xInput').value);
+			let y = parseFloat(document.getElementById('yInput').value);
+			let sum = 0;
+			for (let i = 5; i <= 8; i++) {
+				sum += Math.pow(-1, i + 1) * (x / y + Math.pow(x, 2) / 3) / (Math.pow(x, 2) * Math.pow(y, 2) * factorial(i + 1));
+			}
+			document.getElementById("result").textContent = `Сума ряду: ${sum}`;
+		});
+	</script>
+</body>
+
+</html>

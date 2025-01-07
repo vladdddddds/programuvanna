@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Лаборатона №2</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 50%;
+		}
+
+		th,
+		td {
+			border: 1px solid #ccc;
+			padding: 8px;
+			text-align: center;
+		}
+
+		a,
+		.main {
+			color: #000;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<a href="./lab2.html">Головна</a>
+		<hr style="border: 0;">
+		<a href="./lab2.4.html">Завдання №4</a>
+	</div>
+	<label for="rows">Кількість рядків:</label>
+	<input type="number" id="rows" value="4">
+	<br>
+	<br>
+	<label for="columns">Кількість стовпців:</label>
+	<input type="number" id="columns" value="8">
+	<br>
+	<br>
+	<button onclick="generateTable()">Створити таблицю</button>
+	<button onclick="calculateSum()">Розрахувати суму</button>
+	<br>
+	<p id="result"></p>
+	<table id="table"></table>
+	<script>
+		function generateTable() {
+			const rows = parseInt(document.getElementById('rows').value);
+			const columns = parseInt(document.getElementById('columns').value);
+			const table = document.getElementById('table');
+			let sum = 0;
+			table.innerHTML = '';
+			for (let i = 1; i <= rows; i++) {
+				const row = document.createElement('tr');
+				for (let j = 1; j <= columns; j++) {
+					const cell = document.createElement('td');
+					const value = 3 * i + 2 * j;
+					cell.textContent = value;
+					row.appendChild(cell);
+					if (i === j) {
+						sum += value;
+					}
+				}
+				table.appendChild(row);
+			}
+			document.getElementById('result').textContent = '';
+		}
+		function calculateSum() {
+			const table = document.getElementById('table');
+			const rows = table.rows;
+			let sum = 0;
+			for (let i = 0; i < rows.length; i++) {
+				const cell = rows[i].cells[i];
+				if (cell) {
+					sum += parseInt(cell.textContent);
+				}
+			}
+			document.getElementById('result').textContent = 'Сума елементів, порядковий номер строки та стовпця які співпадають: ' + sum;
+		}
+	</script>
+</body>
+
+</html>

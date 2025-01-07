@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<title>Лаборатона №2</title>
+</head>
+
+<body class="page-4">
+	<div class="main">
+		<a href="./lab2.html">Головна</a>
+	</div>
+	<p class="main">Реалізація та дослідження роботи методу console.log()</p>
+	<br>
+	<p><a href="./lab2.5.html">Завдання №5</a></p>
+	<script>
+		function log1() {
+			let num1 = 10;
+			let num2 = 3;
+			let remainder = num1 % num2;
+			console.log("Остача від ділення " + num1 + " на " + num2 + " дорівнює " + remainder);
+		}
+		function log2() {
+			let num1 = 10;
+			let num2 = 3;
+			let remainder = num1 % num2;
+			let isZeroRemainder = remainder === 0;
+			console.log("Остача від ділення " + num1 + " на " + num2 + " дорівнює нулю: " + isZeroRemainder);
+		}
+		function log3() {
+			let text = "Hello world";
+			let num = 42;
+			let arr = [1, 2, 3];
+			console.log("Текст: %s, Число: %d, Масив: %o", text, num, arr); XMLDocument
+		}
+		log1();
+		log2();
+		log3();
+	</script>
+</body>
+
+</html>

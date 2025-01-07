@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Лаборатона робота №11</title>
+   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+<body>
+   <div class="wrapper">
+      <div class="block-1 bor">
+         <h3>Завдання 1</h3>
+         <div>
+            <p id="pChan">Це параграф</p>
+            <p id="pChan2">Це ще один параграф</p>
+            <button id="chan">Змінити вміст p елементів</button>
+         </div>
+         <div>
+            <p id="pStyle" style="color:#ffee00">Це параграф</p>
+            <p id="pStyle1" style="background-color:#0ee44e">Це параграф</p>
+            <p id="pStyle2">Це параграф</p>
+            <button id="sStyle">Замінити стилі для p</button>
+         </div>
+         <div>
+            <div>Ім'я: <input type="text" name="user"></div><br>
+            <button id="sVal">Встановити значення поля</button>
+         </div>
+         <div>
+            <img id="image" src="../lab10/img/image.webp" width="200" height="213"><br>
+            <button id="sAttr">Встановіть атрибут ширини зображення</button><br><br>
+            <button id="dAttr">Видалити атрибут ширини зображення</button>
+         </div>
+      </div>
+      <div class="block-2 bor">
+         <h3>Завдання 2</h3>
+         <div>
+            <p id="pToP">Це параграф</p>
+            <button id="pTo">Вставити тег span перед тегом p</button>
+         </div>
+         <div id="div2">
+            <button id="eElem">Видалити div</button>
+         </div>
+         <div>
+            <img id="image2" src="../lab10/img/image.webp " width="200" height="213"><br>
+            <button id="dWidth">Показати ширину зображення</button><br><br>
+            <button id="dPos">Показати позицію зображення</button><br>
+            <span id="oWidth"></span><br>
+            <span id="oPos"></span>
+         </div>
+      </div>
+      <div class="block-3 bor">
+         <div id="task3">
+            <h3>Завдання 3</h3>
+            <p>Перший параграф.</p>
+            <p class="start">Другий параграф.</p>
+            <p>Третій параграф.</p>
+            <p>Четвертий параграф.</p>
+            <p class="stop">П'ятий параграф.</p>
+            <p>Шостий параграф.</p>
+            <button id="closestBtn">closest()</button>
+            <button id="mapBtn">map()</button>
+            <button id="prevAllBtn">prevAll()</button>
+            <button id="endBtn">end()</button>
+            <button id="nextUntilBtn">nextUntil()</button>
+         </div>
+      </div>
+      <div class="block-4 bor" style="flex-direction: column;">
+         <h3>Завдання 4</h3>
+         <div class="center-ul">
+            <ul class="modify">
+               <li>Пункт 1</li>
+               <li>Пункт 2</li>
+               <li>Пункт 3</li>
+               <li>Пункт 4</li>
+               <li>Пункт 5</li>
+            </ul>
+            <ul class="modify">
+               <li>Пункт 1</li>
+               <li>Пункт 2</li>
+               <li>Пункт 3</li>
+               <li>Пункт 4</li>
+               <li>Пункт 5</li>
+            </ul>
+         </div>
+         <button id="modifyClassBtn">Заміти елементи з класом modify</button>
+         <button id="modifyLiBtn">Замінити третій елемнт li</button>
+      </div>
+      <div class="block-5 bor">
+         <h3>Завдання 5</h3>
+         <div>
+            <p id="mergeResult">Привіт Я. </p>
+            <p id="mergeResult2">студент ПНУ </p>
+            <button id="mergeButton">Об'єднати рядки</button>
+         </div>
+         <div>
+            <pre id="trimstr"></pre>
+            <button id="trimButton">Обрізати пробіли</button>
+         </div>
+      </div>
+      <div class="block-6 bor">
+         <div>
+            <h3>Завдання 6</h3>
+            <button id="startAmimate">Запустити аніміцію</button>
+            <p id="startRes"></p>
+            <p id="endRes"></p>
+            <p id="posRes"></p>
+         </div>
+         <div id="animatedElement"></div>
+         <div id="animatedElement1"></div>
+      </div>
+      <div class="block-7 bor" style="flex-direction: column;">
+         <h3>Завдання 7</h3>
+         <p>Цей приклад встановлює різні значення швидкості для методу delay() з використання fadeIn()</p>
+         <button id="delay">Клацніть щоб показати квадрати із затримкою</button>
+         <button id="hide">Клацніть щоб приховати квадрати</button>
+         <div style="display: flex; justify-content: center; gap: 20px;">
+            <div id="box1" style="background-color:black;"></div><br>
+            <div id="box2" style="background-color:green;"></div><br>
+            <div id="box3" style="background-color:blue;"></div><br>
+            <div id="box4" style="background-color:red;"></div><br>
+            <div id="box5" style="background-color:purple;"></div><br>
+         </div>
+      </div>
+      <a style="font-size: 20px; color: #000;" href="/index.html" class="h3">Головна</a>
+      <script src="index.js"></script>
+</body>
+
+</html>

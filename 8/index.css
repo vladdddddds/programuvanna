@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 auto;
+ }
+ .wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    justify-content: center;
+ }
+ input {
+    padding: 10px;
+    border-radius: 20px;
+ }
+ button {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(102, 102, 102);
+    cursor: pointer;
+    color: #fff;
+    border-color: rgb(102, 102, 102);
+ }
+ button:hover {
+    background-color: rgb(178, 178, 178);
+    border-color: rgb(178, 178, 178);
+ }
+ .task-1,
+ .task-2,
+ .task-2-1,
+ .task-2-2,
+ .task-2-3,
+ .task-2-4,
+ .task-2-5 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    align-items: center;
+    max-width: 30rem;
+ }
+ 
+ .task-1,
+ .task-2,
+ .task-2-2,
+ .task-2-4,
+ .task-2-5 {
+    max-width: 30rem;
+    width: 100%;
+ }
+ .time {
+    font-size: 40px;
+    font-weight: 700;
+ }
+ .currentdate {
+    font-size: 30px;
+ }
+ 
+ h2 {
+    margin-bottom: 20px;
+ }
+ 
+ #daysInput {
+    margin: 10px 0px;
+ }
+ #result {
+    font-size: 30px;
+ }
+ 
+ .task-2-3 input {
+    margin: 10px 0px;
+ }
+ 
+ .task-2-5 input {
+    margin: 10px 0px;
+ }

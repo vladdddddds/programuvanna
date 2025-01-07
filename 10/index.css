@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+ }
+ h1,
+ a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+ }
+ .h3 {
+    margin-top: 2%;
+ }
+ .wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ }
+ button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #666;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 7px;
+ }
+ form input {
+    border-radius: 10px;
+    padding: 7px;
+ }
+ /* ************************************************** */
+ #hide_text {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition:
+       border-color 0.3s,
+       background-color 0.3s;
+ }
+ .hovered {
+    background-color: red;
+ }
+ 
+ .attr {
+    background-color: yellow;
+    border: 2px solid blue;
+ }
+ 
+ /* ************************************************** */
+ .block-1 {
+    min-width: 310px;
+ }
+ .block-2 {
+    max-width: 300px;
+ }
+ .block-4 {
+    display: inherit;
+    min-width: 320px;
+ }
+ .bor {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    gap: 10px;
+    flex-direction: column;
+ }
+ /* ************************************************** */
+ #imageContainer {
+    position: relative;
+ }
+ 
+ .image {
+    object-position: 0px 0px;
+    width: 300px;
+    object-fit: cover;
+    height: 300px;
+    cursor: pointer;
+ }
+ 
+ #tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }

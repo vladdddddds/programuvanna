@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10vh;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+       sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 60rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+ }
+ 
+ .tabs {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    background: #6edeef;
+    font-weight: bold;
+    transition: background ease 0.2s;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    transition: all 0.5s;
+ }
+ .tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    background: #545f60;
+    text-align: center;
+    border-radius: 0px 10px 10px 10px;
+ }
+ .tabs input[type="radio"] {
+    display: none;
+ }
+ .tabs input[type="radio"]:checked + label {
+    background: #545f60;
+    color: #6edeef;
+    transition: all 0.5s;
+ }
+ .tabs input[type="radio"]:checked + label + .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+ }
+ a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+ }
+ a::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid #fff;
+ }
+ a:hover {
+    color: #6edeef;
+ }
+ label:hover {
+    padding-top: 10px;
+ }
+ .tab p {
+    margin: 12px;
+ }

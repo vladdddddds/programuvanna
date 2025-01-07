@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Лаборатона робота №3</title>
+</head>
+
+<body class="page-3">
+   <div class="main">
+      <a href="./lab3.html">Головна</a>
+      <hr style="border: 0;">
+      <a href="./lab3.3.html">Завдання №3</a>
+   </div>
+   <div class="keyboard">
+      <input type="text" id="textArea">
+      <br>
+      <button id="clear">Очистити поле</button>
+      <br>
+   </div>
+   <script>
+      const clearButton = document.getElementById('clear');
+      const textArea = document.getElementById('textArea');
+      const keyboard = document.querySelector('.keyboard');
+
+      let alphabet = ["Й", "Ц", "У", "К", "Е", "Н", "Г", "Ш", "Щ", "З", "Х", "Ї",
+         "Ф", "І", "В", "А", "П", "Р", "О", "Л", "Д", "Ж", "Є", "Я", "Ч", "С", "М",
+         "И", "Т", "Ь", "Б", "Ю"];
+      alphabet.forEach(letter => {
+         const key = document.createElement('div');
+         key.classList.add('key');
+         key.textContent = letter;
+         key.addEventListener('click', () => {
+            textArea.value += letter;
+         });
+         keyboard.appendChild(key);
+
+      });
+      clearButton.addEventListener('click', () => {
+         textArea.value = '';
+      });
+   </script>
+</body>
+
+</html>

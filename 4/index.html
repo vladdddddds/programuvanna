@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<title>Лаборатона робота №4</title>
+</head>
+
+<body>
+	<h1>Тестування з інформатики</h1>
+	<div class="question">
+		<p>Питання 1: Яка мова програмування використовується для веб-розробки?</p>
+		<div class="options">
+			<div><input type="radio" name="question1" value="0"> Java</div>
+			<div><input type="radio" name="question1" value="1"> Python</div>
+			<div><input type="radio" name="question1" value="2"> HTML</div>
+			<div><input type="radio" name="question1" value="0"> C++</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 2: Яка операційна система найпоширеніша на смартфонах?</p>
+		<div class="options">
+			<div><input type="radio" name="question2" value="0"> Windows</div>
+			<div><input type="radio" name="question2" value="0"> MacOS</div>
+			<div><input type="radio" name="question2" value="0"> Linux</div>
+			<div><input type="radio" name="question2" value="1"> Android</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 3: Які з перерахованих варіантів є браузерами веб-сайтів?</p>
+		<div class="options">
+			<div><input type="checkbox" name="question3" value="1"> Chrome</div>
+			<div><input type="checkbox" name="question3" value="1"> Firefox</div>
+			<div><input type="checkbox" name="question3" value="0"> Java</div>
+			<div><input type="checkbox" name="question3" value="0"> Linux</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 4: Що таке HTML?</p>
+		<div class="options">
+			<div><input type="radio" name="question4" value="1"> Мова розмітки</div>
+			<div><input type="radio" name="question4" value="0"> Програмна мова</div>
+			<div><input type="radio" name="question4" value="0"> Графічний редактор</div>
+			<div><input type="radio" name="question4" value="0"> Операційна система</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 5: Які з наведених об'єктно-орієнтованих мов програмування?</p>
+		<div class="options">
+			<div><input type="checkbox" name="question5" value="1"> Java</div>
+			<div><input type="checkbox" name="question5" value="0"> HTML</div>
+			<div><input type="checkbox" name="question5" value="0"> Photoshop</div>
+			<div><input type="checkbox" name="question5" value="1"> Python</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 6: Що таке CSS?</p>
+		<div class="options">
+			<div><input type="radio" name="question6" value="0"> Програмна мова</div>
+			<div><input type="radio" name="question6" value="1"> Мова опису стилів</div>
+			<div><input type="radio" name="question6" value="0"> Графічний редактор</div>
+			<div><input type="radio" name="question6" value="0"> Операційна система</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 7: Яка мова використовується для створення динамічних веб-сайтів?</p>
+		<div class="options">
+			<div><input type="radio" name="question7" value="0"> HTML</div>
+			<div><input type="radio" name="question7" value="0"> Python</div>
+			<div><input type="radio" name="question7" value="0"> CSS</div>
+			<div><input type="radio" name="question7" value="1"> JavaScript</div>
+		</div>
+	</div>
+	<div class="question">
+		<p>Питання 8: 54 + 6</p>
+		<input type="text" id="comments">
+	</div>
+	<div class="group-btn">
+		<button onclick="restartTest()">Почати з початку</button>
+		<button onclick="calculateScore()">Завершити тест</button>
+	</div>
+	<div id="result">
+		<h2>Результати тестування</h2>
+		<table border="1">
+			<tr>
+				<th>Питання</th>
+				<th>Варіанти відповіді</th>
+				<th>Отримані бали</th>
+			</tr>
+		</table>
+		<p class="total-score">Загальний бал: <span id="totalScore">0</span></p>
+	</div>
+	<script src="index.js"></script>
+</body>
+
+</html>

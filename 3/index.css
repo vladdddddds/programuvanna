@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f0f0f0;
+}
+hr {
+	border: 0;
+	margin-bottom: 5px;
+}
+.page-1 {
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+	min-height: 100vh;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+a {
+	color: #000;
+	font-size: 20px;
+	/* text-decoration: none; */
+}
+.page-1 > p {
+	margin-bottom: 25px;
+}
+/* ................................................................... */
+
+.page-2,
+.page-3,
+.page-4,
+.page-5,
+.page-6,
+.page-7 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: auto;
+	flex-direction: column;
+}
+/* ................................................................... */
+
+.page-3 .main,
+.page-4 .main,
+.page-5 .main,
+.page-6 .main {
+	margin-bottom: 30px;
+}
+/* ................................................................... */
+
+.main {
+	margin-top: 1%;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
+.page-2 div {
+	margin-bottom: 30px;
+}
+/* ................................................................... */
+
+.keyboard {
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+}
+.key {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 2px 4px 3px;
+	cursor: pointer;
+}
+#textArea {
+	width: 100%;
+	height: 5rem;
+	font-size: 30px;
+	margin: 5px 0px;
+}
+#clear {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ................................................................... */
+#image-display {
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+}
+.page5-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#prev-btn,
+#next-btn {
+	padding: 10px;
+	margin: 10px 0px;
+}
+/* ................................................................... */
+.page-6 p {
+	font-size: 20px;
+}
+.page-6 button {
+	padding: 15px;
+	font-size: 16px;
+}
+.page6-cent {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.page-6 input {
+	padding: 10px;
+	font-size: 16px;
+}
+/* ................................................................... */
+
+.tree {
+	list-style-type: none;
+}
+.tree li {
+	margin: 15px;
+	position: relative;
+}
+.tree li:before,
+.tree li:after {
+	content: "";
+	left: -20px;
+	position: absolute;
+}
+.tree li:after {
+	border-top: 1px solid #ccc;
+	height: 100%;
+	top: 50px;
+}
+.tree li a {
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: #333;
+	display: inline-block;
+}
+
+.page-7 .tree {
+	font-family: "Open Sans", sans-serif;
+}
+#Tree ul {
+	display: none;
+}

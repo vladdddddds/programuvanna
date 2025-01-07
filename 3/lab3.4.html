@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Лаборатона робота №3</title>
+</head>
+
+<body class="page-5">
+   <div class="main">
+      <a href="./lab3.html">Головна</a>
+      <hr style="border: 0;">
+      <a href="./lab3.5.html">Завдання №5</a>
+   </div>
+   <div class="page5-img">
+      <img id="image-display" src="">
+   </div>
+   <div>
+      <button id="prev-btn">Назад</button>
+      <button id="next-btn">Вперед</button>
+   </div>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+         var imageNames = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
+         var currentIndex = 0;
+
+         var imageDisplay = document.getElementById("image-display");
+         var prevButton = document.getElementById("prev-btn");
+         var nextButton = document.getElementById("next-btn");
+
+         function displayCurrentImage() {
+            var currentImageName = imageNames[currentIndex];
+            var imagePath = "./img/" + currentImageName;
+
+            imageDisplay.src = imagePath;
+         }
+         nextButton.addEventListener("click", function () {
+            if (currentIndex < imageNames.length - 1) {
+               currentIndex++;
+            } else {
+               currentIndex = 0;
+            }
+            displayCurrentImage();
+         });
+         prevButton.addEventListener("click", function () {
+            if (currentIndex > 0) {
+               currentIndex--;
+            } else {
+               currentIndex = imageNames.length - 1;
+            }
+            displayCurrentImage();
+         });
+
+         displayCurrentImage();
+      });
+   </script>
+</body>
+
+</html>

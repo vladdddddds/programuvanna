@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f0f0f0;
+}
+.page-1 {
+	font-family: "Open Sans", sans-serif;
+	display: flex;
+	min-height: 100vh;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.main-b {
+	margin-top: 10%;
+}
+a {
+	color: #000;
+	font-size: 20px;
+	/* text-decoration: none; */
+}
+.page-1 > p {
+	margin-bottom: 25px;
+}
+/* ................................................................... */
+
+.page-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: auto;
+	flex-direction: column;
+}
+.clock {
+	font-size: 48px;
+	font-weight: bold;
+	color: #333;
+	margin: auto;
+}
+
+.main {
+	margin-top: 1%;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
+
+/* ................................................................... */
+
+.page-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: auto;
+	flex-direction: column;
+}
+
+.calculator {
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 20px;
+	background-color: #6a6868;
+	border-radius: 10px;
+}
+
+#display {
+	width: 100%;
+	font-size: 24px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+button {
+	width: 66px;
+	height: 60px;
+	font-size: 24px;
+	margin: 5px;
+	color: #fff;
+	background-color: #252525;
+}
+
+.page-3 .main,
+.page-4 .main,
+.page-5 .main {
+	margin-bottom: 30px;
+}
+
+/* ................................................................... */
+
+.page-4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: auto;
+	flex-direction: column;
+}
+/* ................................................................... */
+.page-5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: auto;
+	flex-direction: column;
+}
+.main-p {
+	font-size: 20px;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+}
+hr {
+	border: 0;
+	margin-bottom: 5px;
+}

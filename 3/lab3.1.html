@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="index.css">
+   <title>Лаборатона робота №3</title>
+</head>
+
+<body class="page-2">
+   <div class="main">
+      <a href="./lab3.html">Головна</a>
+      <hr style="border: 0;">
+      <a href="./lab3.2.html">Завдання №2</a>
+   </div>
+   <h2>Розрахунок прямокутника:</h2>
+   <br>
+   <div>
+      <label for="length">Довжина:</label>
+      <input type="text" id="length" oninput="calculateRectangle()" />
+   </div>
+   <div>
+      <label for="width">Ширина:</label>
+      <input type="text" id="width" oninput="calculateRectangle()" />
+   </div>
+   <p>Периметр: <span id="perimeter">0</span></p>
+   <p>Площа: <span id="area">0</span></p>
+   <p>Довжина діагоналі: <span id="diagonal">0</span></p>
+
+   <script>
+      function calculateRectangle() {
+         const length = parseFloat(document.getElementById("length").value);
+         const width = parseFloat(document.getElementById("width").value);
+         const perimeter = 2 * (length + width);
+         const area = length * width;
+         const diagonal = Math.sqrt(length ** 2 + width ** 2);
+         document.getElementById("perimeter").textContent = perimeter;
+         document.getElementById("area").textContent = area;
+         document.getElementById("diagonal").textContent = diagonal;
+      }
+   </script>
+</body>
+
+</html>
